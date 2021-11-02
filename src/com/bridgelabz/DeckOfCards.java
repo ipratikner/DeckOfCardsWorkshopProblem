@@ -4,19 +4,27 @@ public class DeckOfCards {
 
     public static void main(String[] args) {
 
-        System.out.println("Welcome to Deck of cards");
+        System.out.println("Welcome to Deck of cards"); // printed welcome msg
 
-        String[][] cardsCollection = new String[4][13]; // memory for cards allocated
+      /*
+      *creating array to store values
+      * storing suits in one string and ranks in another string
+       */
+
+        String[][] cardsCollection = new String[4][13];
 
         String[] suits = { "Clubs", "Diamonds", "Hearts", "Spades" };
         String[] ranks = { "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace" };
 
-        DeckOfCards deckOfCards = new DeckOfCards(); // object created
+        /*
+        creating object to access createCards() Method
+         */
+        DeckOfCards deckOfCards = new DeckOfCards();
         deckOfCards.createCards(suits, ranks, cardsCollection);
 
     }
 
-    // created cards method
+    // created  method to store data in array
 
     public void createCards(String[] suit, String[] ranks, String[][] cardsCollection) {
         for (int i = 0; i < 4; i++) {
