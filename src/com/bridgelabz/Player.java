@@ -14,10 +14,9 @@ public class Player {
     }
 
     public void getCardList() {
-        //get all cards inside cardList
+        // get all cards inside cardList
         for (String position : cardList) {
             System.out.print(position + ", ");
         }
     }
-
 }
